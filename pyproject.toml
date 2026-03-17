@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airfoil-tool"
+version = "0.1.0"
+description = "Airfoil geometry + inviscid vortex panel method (CV-grade engineering tool)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Alexander"}]
+dependencies = [
+  "numpy>=2.0",
+  "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+airfoil-tool = "airfoil_tool.cli:main"
+
+[tool.ruff]
+line-length = 100

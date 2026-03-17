@@ -1,0 +1,26 @@
+# venv
+.venv/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# build artifacts
+dist/
+build/
+*.egg-info/
+
+# outputs
+out/
+*.csv
+
+# editor
+.vscode/
+.idea/
+
+# Local airfoil database (large)
+data/uiuc/
+data/_downloads/
+coord_seligFmt.zip
